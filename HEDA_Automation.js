@@ -1,5 +1,5 @@
 function codigoDeLaHojaDeCalculo(){
-  return "1fK3wISgnGsJramzAymZ06mZywOFIBBojz2sO7kZjHiY"
+  return <Page ID> //Example "1fK3wISgnGsJramzAymZ06mZywOFIBBojz2sO7kZjHiY"
 }
 
 function codigoPrincipal() {
@@ -945,7 +945,7 @@ function valoresC2(values, texto){
   result[1] = result[1] + 1;
   result[0] = result[0] + (valores[2] === "" ? 0 : ((isSi(valores[2]) ? 3 : 0)));
   result[1] = result[1] + 3;
-  if (valores[3] && valores[3] > 2){
+  if (valores[3] && valores[3].length > 2){
     result[0] = result[0] + 5;
     result[3] = "Formatos usados:\n" + valores[3];
   }
@@ -955,7 +955,7 @@ function valoresC2(values, texto){
   result[0] = result[0]+ (valores[5] !== '' && valores[5]== "Existe un sub-registro considerable." ? 1 : 0);
   result[1] = result[1] + 1;
   result[1] = result[1] + 1;
-  if (valores[6] && valores[6] > 2){
+  if (valores[6] && valores[6].length > 2){
     result[0] = result[0] + 1;
     result[4] = "\nSub-registro, casos particulares:\n" + valores[6];
   }
@@ -963,7 +963,7 @@ function valoresC2(values, texto){
   result[1] = result[1] + 5;
   result[0] = result[0]+ (valores[8] !== '' && valores[8]== "Existe un sobre-registro considerable." ? 1 : 0);
   result[1] = result[1] + 1;
-  if (valores[9] && valores[9] > 2){
+  if (valores[9] && valores[9].length > 2){
     result[0] = result[0] + 1;
     result[4] = "\nSobre-registro, casos particulares:\n" + valores[10];
   }
